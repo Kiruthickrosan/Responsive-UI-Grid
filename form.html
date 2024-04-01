@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive UI Grid</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="row">
+      <div class="cell">
+        <button onclick="toggleBold(0)">Bold</button>
+      </div>
+      <div class="cell">
+        <button onclick="toggleItalic(0)">Italic</button>
+      </div>
+      <div class="cell">
+        <button onclick="toggleUnderline(0)">Underline</button>
+      </div>
+      <div class="cell">
+        <input type="number" onchange="changeFontSize(0, this.value)" value="12">
+      </div>
+      <div class="cell">
+        <input type="color" onchange="changeColor(0, this.value)">
+      </div>
+      <div class="cell">
+        <p id="sentence0">He's not the sharpest knife in the drawer.</p>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="cell">
+          <button onclick="toggleBold(1)">Bold</button>
+        </div>
+        <div class="cell">
+          <button onclick="toggleItalic(1)">Italic</button>
+        </div>
+        <div class="cell">
+          <button onclick="toggleUnderline(1)">Underline</button>
+        </div>
+        <div class="cell">
+          <input type="number" onchange="changeFontSize(1, this.value)" value="12">
+        </div>
+        <div class="cell">
+          <input type="color" onchange="changeColor(1, this.value)">
+        </div>
+        <div class="cell">
+          <p id="sentence1">Now you must answer some big questions.</p>
+        </div>
+      </div>
+    
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
